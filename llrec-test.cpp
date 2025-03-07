@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+
+
 #include <functional>
 #include "llrec.h"
 using namespace std;
@@ -67,6 +69,13 @@ void dealloc(Node* head)
 //   function object struct declarations
 // -----------------------------------------------
 
+struct filterHelper{
+    int target;
+    filterHelper(int x) : target(x){}
+    bool operator()(int value){
+        return value <=target;
+    }
+};
 
 
 
@@ -85,10 +94,26 @@ int main(int argc, char* argv[])
     cout << "Original list: ";
     print(head);
 
-    // Test out your linked list code
+    // Test out yosur linked list code
+    cout << "debuggggsssss" << endl;
+    Node *smaller = NULL;
+    Node *larger = NULL;
+    int pivot = 9;
+   //cout << "debugggg" << endl;
+    llpivot(head,smaller,larger,pivot);
+    cout <<"smaller/equal to " <<pivot <<": ";
+    print(smaller);
+    cout <<"larger than " << pivot << ": ";
+    print(larger);
 
+    filterHelper filter(5);
+    head = llfilter(head,filter);
+    cout <<"List after filtering values <=5:  ";
+    print(head);
 
-
+    dealloc(smaller);
+    dealloc(larger);
+    dealloc(head);
     
     return 0;
 
