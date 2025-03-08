@@ -3,15 +3,32 @@
 //*********************************************
 // Provide your implementation of llpivot below
 //*********************************************
-
+// int iteration = 0;
 void llpivot(Node *&head, Node *&smaller, Node *&larger, int pivot)
 {
-   while(head != NULL)
-   {
+    static bool initialized = false;
+    if(!initialized)
+    {
+        smaller = nullptr;
+        larger = nullptr;
+        initialized = true;
+    }
+    // if(iteration)
+    // {
+    //     smaller = nullptr;
+    //     larger = nullptr; 
+    // }
+    if(head == nullptr)
+    {
+        initialized = false;
+        return;
+    }
+
     Node* curr = head;
     head = head->next;
-    
-    if(curr->val < pivot)
+
+    llpivot(head, smaller, larger, pivot);
+    if(curr->val <= pivot)
     {
         curr->next = smaller;
         smaller = curr;
@@ -20,6 +37,7 @@ void llpivot(Node *&head, Node *&smaller, Node *&larger, int pivot)
         curr->next = larger;
         larger = curr;
     }
-   } 
+    // iteration++;
+    
 }
 

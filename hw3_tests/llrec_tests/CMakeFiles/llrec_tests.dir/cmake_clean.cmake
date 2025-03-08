@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/llrec_tests.dir/llrec_test_utils.cpp.o"
+  "CMakeFiles/llrec_tests.dir/llrec_test_utils.cpp.o.d"
   "CMakeFiles/llrec_tests.dir/llrec_tests.cpp.o"
+  "CMakeFiles/llrec_tests.dir/llrec_tests.cpp.o.d"
   "llrec_tests"
   "llrec_tests.pdb"
 )

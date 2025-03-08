@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /work/hws/hw3/hw3/hw3_tests
-# Build directory: /work/hws/hw3/hw3/hw3_tests
+# Source directory: /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests
+# Build directory: /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

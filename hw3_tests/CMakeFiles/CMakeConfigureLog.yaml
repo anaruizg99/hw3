@@ -1,0 +1,1028 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The system is: Darwin - 24.2.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'System' not found
+      cc: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/3.31.5/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'c++' not found
+      c++: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/3.31.5/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bef8f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bef8f.dir/build.make CMakeFiles/cmTC_bef8f.dir/build
+        Building C object CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        cc: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.2.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_bef8f
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bef8f.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_bef8f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -o cmTC_bef8f
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bef8f/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bef8f.dir/build.make CMakeFiles/cmTC_bef8f.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [cc: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-bjpq5H -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.2.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_bef8f]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bef8f.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_bef8f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_bef8f] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_bef8f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the C compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7352/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b7352.dir/build.make CMakeFiles/cmTC_b7352.dir/build
+        Building CXX object CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        c++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.2.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1
+         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_b7352
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7352.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.2.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b7352 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b7352
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7352/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b7352.dir/build.make CMakeFiles/cmTC_b7352.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [c++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-210CBc -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.2.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_b7352]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7352.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b7352 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b7352] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b7352.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/homebrew/lib/cmake/GTest/GTestConfig.cmake:29 (find_dependency)"
+      - "/opt/homebrew/share/cmake/Modules/FindGTest.cmake:197 (find_package)"
+      - "CMakeLists.txt:41 (find_package)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-i2rk4B"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-i2rk4B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-i2rk4B'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_de7cf/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_de7cf.dir/build.make CMakeFiles/cmTC_de7cf.dir/build
+        Building C object CMakeFiles/cmTC_de7cf.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_de7cf.dir/src.c.o -MF CMakeFiles/cmTC_de7cf.dir/src.c.o.d -o CMakeFiles/cmTC_de7cf.dir/src.c.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/CMakeFiles/CMakeScratch/TryCompile-i2rk4B/src.c
+        Linking C executable cmTC_de7cf
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de7cf.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_de7cf.dir/src.c.o -o cmTC_de7cf
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:353 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_CSTDIO_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2030f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2030f.dir/build.make CMakeFiles/cmTC_2030f.dir/build
+        Building CXX object CMakeFiles/cmTC_2030f.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_CSTDIO  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_2030f.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_2030f.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_2030f.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_2030f
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2030f.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2030f.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_2030f
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:57 (TRY_RUN)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:156 (KWSYS_PLATFORM_TEST_RUN)"
+      - "testing_utils/kwsys/CMakeLists.txt:363 (KWSYS_PLATFORM_CXX_TEST_RUN)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_LFS_WORKS_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_134f9/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_134f9.dir/build.make CMakeFiles/cmTC_134f9.dir/build
+        Building CXX object CMakeFiles/cmTC_134f9.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DKWSYS_CXX_HAS_CSTDIO=1 -DTEST_KWSYS_LFS_WORKS  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_134f9.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_134f9.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_134f9.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_134f9
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_134f9.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_134f9.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_134f9
+        
+      exitCode: 0
+    runResult:
+      variable: "KWSYS_LFS_WORKS"
+      cached: true
+      stdout: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:381 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_LONG_LONG_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf9a3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bf9a3.dir/build.make CMakeFiles/cmTC_bf9a3.dir/build
+        Building CXX object CMakeFiles/cmTC_bf9a3.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_LONG_LONG  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_bf9a3.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_bf9a3.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_bf9a3.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_bf9a3
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf9a3.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_bf9a3.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_bf9a3
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:383 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS___INT64_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fa2f0/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fa2f0.dir/build.make CMakeFiles/cmTC_fa2f0.dir/build
+        Building CXX object CMakeFiles/cmTC_fa2f0.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS___INT64  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_fa2f0.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_fa2f0.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_fa2f0.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:24:1: error: unknown type name '__int64'
+           24 | __int64 f(__int64 n)
+              | ^
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:24:11: error: unknown type name '__int64'
+           24 | __int64 f(__int64 n)
+              |           ^
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:30:3: error: unknown type name '__int64'
+           30 |   __int64 n = 0;
+              |   ^
+        3 errors generated.
+        make[1]: *** [CMakeFiles/cmTC_fa2f0.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+        make: *** [cmTC_fa2f0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:415 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_STL_HAS_WSTRING_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d52b6/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d52b6.dir/build.make CMakeFiles/cmTC_d52b6.dir/build
+        Building CXX object CMakeFiles/cmTC_d52b6.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_STL_HAS_WSTRING  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_d52b6.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_d52b6.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_d52b6.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_d52b6
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d52b6.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d52b6.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_d52b6
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:130 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:458 (KWSYS_PLATFORM_C_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_C_HAS_PTRDIFF_T_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_91e98/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_91e98.dir/build.make CMakeFiles/cmTC_91e98.dir/build
+        Building C object CMakeFiles/cmTC_91e98.dir/kwsysPlatformTestsC.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DTEST_KWSYS_C_HAS_PTRDIFF_T  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_91e98.dir/kwsysPlatformTestsC.c.o -MF CMakeFiles/cmTC_91e98.dir/kwsysPlatformTestsC.c.o.d -o CMakeFiles/cmTC_91e98.dir/kwsysPlatformTestsC.c.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+        Linking C executable cmTC_91e98
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91e98.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_91e98.dir/kwsysPlatformTestsC.c.o -o cmTC_91e98
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:130 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:460 (KWSYS_PLATFORM_C_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_C_HAS_SSIZE_T_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ad280/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ad280.dir/build.make CMakeFiles/cmTC_ad280.dir/build
+        Building C object CMakeFiles/cmTC_ad280.dir/kwsysPlatformTestsC.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DTEST_KWSYS_C_HAS_SSIZE_T  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_ad280.dir/kwsysPlatformTestsC.c.o -MF CMakeFiles/cmTC_ad280.dir/kwsysPlatformTestsC.c.o.d -o CMakeFiles/cmTC_ad280.dir/kwsysPlatformTestsC.c.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+        Linking C executable cmTC_ad280
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad280.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ad280.dir/kwsysPlatformTestsC.c.o -o cmTC_ad280
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:130 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:463 (KWSYS_PLATFORM_C_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_80050/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_80050.dir/build.make CMakeFiles/cmTC_80050.dir/build
+        Building C object CMakeFiles/cmTC_80050.dir/kwsysPlatformTestsC.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DTEST_KWSYS_C_HAS_CLOCK_GETTIME_MONOTONIC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_80050.dir/kwsysPlatformTestsC.c.o -MF CMakeFiles/cmTC_80050.dir/kwsysPlatformTestsC.c.o.d -o CMakeFiles/cmTC_80050.dir/kwsysPlatformTestsC.c.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsC.c
+        Linking C executable cmTC_80050
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80050.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_80050.dir/kwsysPlatformTestsC.c.o -o cmTC_80050
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:488 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_SETENV_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_76e35/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_76e35.dir/build.make CMakeFiles/cmTC_76e35.dir/build
+        Building CXX object CMakeFiles/cmTC_76e35.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_SETENV  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_76e35.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_76e35.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_76e35.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_76e35
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76e35.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_76e35.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_76e35
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:490 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_UNSETENV_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f3c3e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f3c3e.dir/build.make CMakeFiles/cmTC_f3c3e.dir/build
+        Building CXX object CMakeFiles/cmTC_f3c3e.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UNSETENV  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_f3c3e.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_f3c3e.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_f3c3e.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_f3c3e
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3c3e.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f3c3e.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_f3c3e
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:492 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ebc3a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ebc3a.dir/build.make CMakeFiles/cmTC_ebc3a.dir/build
+        Building CXX object CMakeFiles/cmTC_ebc3a.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_ebc3a.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_ebc3a.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_ebc3a.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:196:13: error: use of undeclared identifier 'environ'
+          196 |   char* e = environ[0];
+              |             ^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_ebc3a.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+        make: *** [cmTC_ebc3a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:494 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_UTIMES_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f710c/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f710c.dir/build.make CMakeFiles/cmTC_f710c.dir/build
+        Building CXX object CMakeFiles/cmTC_f710c.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UTIMES  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_f710c.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_f710c.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_f710c.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_f710c
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f710c.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f710c.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_f710c
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:496 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_UTIMENSAT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a7794/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a7794.dir/build.make CMakeFiles/cmTC_a7794.dir/build
+        Building CXX object CMakeFiles/cmTC_a7794.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_UTIMENSAT  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_a7794.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_a7794.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_a7794.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_a7794
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7794.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a7794.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_a7794
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:498 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_STAT_HAS_ST_MTIM_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9a9b7/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9a9b7.dir/build.make CMakeFiles/cmTC_9a9b7.dir/build
+        Building CXX object CMakeFiles/cmTC_9a9b7.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIM  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_9a9b7.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_9a9b7.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_9a9b7.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:43:15: error: no member named 'st_mtim' in 'stat'
+           43 |   (void)stat1.st_mtim.tv_sec;
+              |         ~~~~~ ^
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:44:15: error: no member named 'st_mtim' in 'stat'
+           44 |   (void)stat1.st_mtim.tv_nsec;
+              |         ~~~~~ ^
+        2 errors generated.
+        make[1]: *** [CMakeFiles/cmTC_9a9b7.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+        make: *** [cmTC_9a9b7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:500 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_STAT_HAS_ST_MTIMESPEC_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_14ab3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_14ab3.dir/build.make CMakeFiles/cmTC_14ab3.dir/build
+        Building CXX object CMakeFiles/cmTC_14ab3.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_STAT_HAS_ST_MTIMESPEC  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_14ab3.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_14ab3.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_14ab3.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        Linking CXX executable cmTC_14ab3
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14ab3.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_14ab3.dir/kwsysPlatformTestsCXX.cxx.o -o cmTC_14ab3
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:10 (TRY_COMPILE)"
+      - "testing_utils/kwsys/kwsysPlatformTests.cmake:147 (KWSYS_PLATFORM_TEST)"
+      - "testing_utils/kwsys/CMakeLists.txt:707 (KWSYS_PLATFORM_CXX_TEST)"
+    directories:
+      source: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+      binary: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/test_cmake_lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_526a7/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_526a7.dir/build.make CMakeFiles/cmTC_526a7.dir/build
+        Building CXX object CMakeFiles/cmTC_526a7.dir/kwsysPlatformTestsCXX.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DTEST_KWSYS_CXX_HAS_EXT_STDIO_FILEBUF_H  -Wall  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_526a7.dir/kwsysPlatformTestsCXX.cxx.o -MF CMakeFiles/cmTC_526a7.dir/kwsysPlatformTestsCXX.cxx.o.d -o CMakeFiles/cmTC_526a7.dir/kwsysPlatformTestsCXX.cxx.o -c /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx
+        /Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/testing_utils/kwsys/kwsysPlatformTestsCXX.cxx:372:12: fatal error: 'ext/stdio_filebuf.h' file not found
+          372 | #  include <ext/stdio_filebuf.h>
+              |            ^~~~~~~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_526a7.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+        make: *** [cmTC_526a7/fast] Error 2
+        
+      exitCode: 2
+...

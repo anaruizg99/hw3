@@ -1,33 +1,23 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/work/hws/hw3/hw3/hw3_tests/llrec_tests/llrec_test_utils.cpp" "/work/hws/hw3/hw3/hw3_tests/llrec_tests/CMakeFiles/llrec_tests.dir/llrec_test_utils.cpp.o"
-  "/work/hws/hw3/hw3/hw3_tests/llrec_tests/llrec_tests.cpp" "/work/hws/hw3/hw3/hw3_tests/llrec_tests/CMakeFiles/llrec_tests.dir/llrec_tests.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "TEST_BINARY_DIR=\"/work/hws/hw3/hw3/hw3_tests\""
-  "USER_CODE_DIR=\"/work/hws/hw3/hw3\""
-  "main=disabled_main"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/work/hws/hw3/hw3"
-  "testing_utils/."
-  "testing_utils/generated_headers"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/llrec_tests/llrec_test_utils.cpp" "llrec_tests/CMakeFiles/llrec_tests.dir/llrec_test_utils.cpp.o" "gcc" "llrec_tests/CMakeFiles/llrec_tests.dir/llrec_test_utils.cpp.o.d"
+  "/Users/anaruiz/Desktop/csci104/hws/hw3/hw3_tests/llrec_tests/llrec_tests.cpp" "llrec_tests/CMakeFiles/llrec_tests.dir/llrec_tests.cpp.o" "gcc" "llrec_tests/CMakeFiles/llrec_tests.dir/llrec_tests.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/work/hws/hw3/hw3/hw3_tests/llrec_tests/CMakeFiles/hw3_llrec.dir/DependInfo.cmake"
-  "/work/hws/hw3/hw3/hw3_tests/testing_utils/CMakeFiles/testing_utils.dir/DependInfo.cmake"
-  "/work/hws/hw3/hw3/hw3_tests/testing_utils/kwsys/CMakeFiles/kwsys.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
