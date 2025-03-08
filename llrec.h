@@ -104,9 +104,7 @@ Node* llfilter(Node* head, Comp pred)
             }
         }
         else{
-            Node* temp = head;
             head = head->next;
-            delete temp; 
         }
     }
 
