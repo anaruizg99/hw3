@@ -67,8 +67,8 @@ private:
   int m;
   PComparator comp;
   //heapifying helper functions for heap operations
-  void heapifyUp(int loc);
-  void heapifyDown(int idx);
+  void heapifyUp(size_t loc);
+  void heapifyDown(size_t idx);
 };
 
 // Add implementation of member functions here
@@ -83,7 +83,7 @@ Heap<T, PComparator>::~Heap(){}
 
 template <typename T, typename PComparator>
 void Heap<T, PComparator>::heapifyUp(size_t loc) {
-	int parent = (loc - 1) / m;
+	size_t parent = (loc - 1) / m;
   while(loc >0 && comp(dat[loc], dat[parent])){
     std::swap(dat[loc], dat[parent]);
     loc = parent;
@@ -92,13 +92,13 @@ void Heap<T, PComparator>::heapifyUp(size_t loc) {
 }
 
 template <typename T, typename PComparator>
-void Heap<T, PComparator>::heapifyDown(int idx) {
-  int child = m * idx +1;
+void Heap<T, PComparator>::heapifyDown(size_t idx) {
+  size_t child = m * idx +1;
   if(child >= dat.size()){return;}
-  int bestChild = child;
+  size_t bestChild = child;
   for(int i =1; i < m; i++)
   {
-    int nextChild = child +i;
+    size_t nextChild = child +i;
     if(nextChild < dat.size() && comp(dat[nextChild], dat[bestChild])){
       bestChild = nextChild;
     }
