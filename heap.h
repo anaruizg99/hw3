@@ -96,7 +96,7 @@ void Heap<T, PComparator>::heapifyDown(int idx) {
   int child = m * idx +1;
   if(child >= dat.size()){return;}
   int bestChild = child;
-  for(int i =1; i <= m; i++)
+  for(int i =1; i < m; i++)
   {
     int nextChild = child +i;
     if(nextChild < dat.size() && comp(dat[nextChild], dat[bestChild])){
