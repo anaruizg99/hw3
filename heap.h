@@ -82,8 +82,8 @@ template <typename T, typename PComparator>
 Heap<T, PComparator>::~Heap(){}
 
 template <typename T, typename PComparator>
-void Heap<T, PComparator>::heapifyUp(int loc) {
-  int parent = (loc - 1) / m;
+void Heap<T, PComparator>::heapifyUp(size_t loc) {
+	int parent = (loc - 1) / m;
   while(loc >0 && comp(dat[loc], dat[parent])){
     std::swap(dat[loc], dat[parent]);
     loc = parent;
@@ -96,7 +96,7 @@ void Heap<T, PComparator>::heapifyDown(int idx) {
   int child = m * idx +1;
   if(child >= dat.size()){return;}
   int bestChild = child;
-  for(int i =1; i < m; i++)
+  for(int i =1; i <= m; i++)
   {
     int nextChild = child +i;
     if(nextChild < dat.size() && comp(dat[nextChild], dat[bestChild])){
