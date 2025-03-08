@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libhw3_llrec.a CMakeFiles/hw3_llrec.dir/Users/anaruiz/Desktop/csci104/hws/hw3/llrec.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libhw3_llrec.a
+/usr/bin/ar qc libhw3_llrec.a  CMakeFiles/hw3_llrec.dir/home/codio/workspace/hw3/hw3/llrec.cpp.o
+/usr/bin/ranlib libhw3_llrec.a

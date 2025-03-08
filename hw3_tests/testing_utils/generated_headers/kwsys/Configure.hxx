@@ -10,7 +10,7 @@
 #define kwsys_STL_HAS_WSTRING 1
 /* Whether <ext/stdio_filebuf.h> is available. */
 #define kwsys_CXX_HAS_EXT_STDIO_FILEBUF_H                         \
-  0
+  1
 
 #if defined(__SUNPRO_CC) && __SUNPRO_CC > 0x5130 && defined(__has_attribute)
 #  define kwsys__has_cpp_attribute(x) __has_attribute(x)
