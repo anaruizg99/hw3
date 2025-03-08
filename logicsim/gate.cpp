@@ -93,17 +93,23 @@ NotGate::NotGate(Wire* input, Wire* output) : Gate(1, output){
 	m_inputs.push_back(input);
 }
 Event* NotGate::update(uint64_t time){
-	char newState = m_inputs[0]->getState();
-	if(newState == '0')
+	if(m_inputs.empty() || !m_output)
+	{
+		return nullptr;
+	}
+	char InState = m_inputs[0]->getState();
+	char newState = 'X';
+	if(InState == '0')
 	{
 		newState = '1';
 	}
-	else if(newState == '1'){
+	else if(InState == '1'){
 		newState = '0';
 	}
 
 	if(newState != m_current_state){
 		m_current_state = newState;
+	
 		return new Event{time + m_delay, m_output, newState};
 	}
 	return nullptr;
